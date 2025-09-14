@@ -17,3 +17,10 @@ This project was developed as part of my **2nd Semester Object-Oriented Programm
 - Python 3.x   
 - Object-Oriented Programming (OOP) concepts  
 
+---
+
+## ⚡ How to Run
+Clone this repository:
+   ```bash
+   git clone https://github.com/Moaza3/CourseRegistrationSystem.git
+
