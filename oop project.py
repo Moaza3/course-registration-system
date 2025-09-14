@@ -38,7 +38,7 @@ class Student(User):
         self.courses = []
     
     def show_menu(self, system):          
-        while True:                    # concrete version h baar baar menu dikhaye ga jab tak logout na kry
+        while True:                    
             self.clear_screen()
             terminal_width = get_terminal_width()
             print("=" * terminal_width)
@@ -293,8 +293,8 @@ class CourseRegistrationSystem:
     def load_data(self):
         if os.path.exists(self.data_file):
             with open(self.data_file, 'r') as f:
-                data = json.load(f)          #File ka data JSON format me read karke data variable me store kar diya
-                self.courses = data.get('courses', {}) #JSON me se "courses" section nikala.Agar courses nahi mile, to empty dictionary daal di.                
+                data = json.load(f)          
+                self.courses = data.get('courses', {})                
                 students_data = data.get('students', {})
                 for name, student_data in students_data.items():
                     student = Student(name, student_data['password'])
@@ -510,4 +510,5 @@ if __name__ == "__main__":
     project = ProjectInfo()
     
     project.show_intro()
+
     project.show_main_menu(system)
