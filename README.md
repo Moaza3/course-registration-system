@@ -5,14 +5,6 @@ This project was developed as part of my **2nd Semester Object-Oriented Programm
 
 ---
 
-## 🚀 Features
-- Add / update / delete courses  
-- Student registration & management  
-- Enroll / drop courses  
-- View available courses & enrolled students  
-
----
-
 ## 🛠️ Technologies Used
 - Python 3.x   
 - Object-Oriented Programming (OOP) concepts  
